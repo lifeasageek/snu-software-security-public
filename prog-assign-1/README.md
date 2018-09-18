@@ -3,10 +3,15 @@
 - **Due date: 11:59pm, Oct 4, 2018**
 
 - Advanced computer security theories and techniques
+- [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
+- [Instructor: Byoungyoung Lee](https://lifeasageek.github.io/)
+- TA: Hyunjoon Kim (hjkim@sor.snu.ac.kr)
 
-- [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en)
-- [Seoul National University](http://snu.ac.kr/index.html)
-- [Byoungyoung Lee](https://lifeasageek.github.io/)
+## NOTES
+
+- To complete this assignment, we strongly encourage you to prepare
+your own machine running Ubuntu 16.04 with a root access. Ubuntu 18.04
+is not tested, but it should be working without a major issue.
 
 ## Introduction
 
