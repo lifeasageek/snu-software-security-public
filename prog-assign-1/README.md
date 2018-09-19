@@ -5,7 +5,7 @@
 - Advanced computer security theories and techniques
 - [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
 - [Instructor: Byoungyoung Lee](https://lifeasageek.github.io/)
-- TA: Hyunjoon Kim (hjkim@sor.snu.ac.kr)
+- TA: Hyunjun Kim (hjkim@sor.snu.ac.kr)
 
 ## NOTES
 
