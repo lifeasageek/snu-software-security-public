@@ -197,6 +197,6 @@ Testing Time: 0.20s
 ## Submission
 
 - edit the files in the "pass" folder
-- run the prepare-submit.sh
-- rename it to "[Student-number]_assign1.tar.gz" (e.g., 2018-12345_assign1.tar.gz)
+- run the script "prepare-submit.sh"
+- rename the file "assign1.tar.gz" to "[Student-number]_assign1.tar.gz" (e.g., 2018-12345_assign1.tar.gz)
 - upload to eTL
