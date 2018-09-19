@@ -23,8 +23,8 @@ value is used for memory allocation, (i.e., `malloc()`), the memory
 will be allocated much smaller than expected.
 
 In fact, this integer overflow itself is not a vulnerability. It is
-commonly used for begign cases as well---including hash computations,
-image deconding, and many other cases. Thus, one of the key challenge
+commonly used for benign cases as well---including hash computations,
+image decoding, and many other cases. Thus, one of the key challenge
 in detecting harmful integer overflows is in understanding how the
 overflown value is impacting following program semantics. Otherwise,
 we will suffer from false alarms.
@@ -196,6 +196,7 @@ Testing Time: 0.20s
 
 ## Submission
 
-- Submission instructions will be announced later.
-
-
+- edit the files in the "pass" folder
+- run the prepare-submit.sh
+- rename it to "[Student-number]_assign1.tar.gz" (e.g., 2018-12345_assign1.tar.gz)
+- upload to eTL
