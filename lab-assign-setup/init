@@ -1,0 +1,109 @@
+#!/usr/bin/env python2
+
+import os
+import platform
+
+from utils import *
+
+ROOT = os.path.dirname(os.path.realpath(__file__))
+DESIRED_ROOT = "/vagrant/cs52700-public"
+KFLAG = os.path.join(ROOT, "kflag.ko")
+
+
+def check_rootpath():
+    if not ROOT.startswith(DESIRED_ROOT):
+        print("[-] ERROR: You mush clone the repository under %s" \
+              % DESIRED_ROOT)
+        exit(-1)
+
+def check_arch():
+    return platform.architecture()[0][0:2]
+
+def get_kflag_kv():
+    cmds = ["modinfo", "-F", "vermagic", "kflag.ko"]
+    return canonical_kv(shrun(cmds).split()[0])
+
+def get_kv():
+    return canonical_kv(platform.release())
+
+def canonical_kv(kv):
+    return kv.split("-")[0]
+
+def check_kernel():
+    kflag_kv = get_kflag_kv()
+    kv = get_kv()
+    if kflag_kv != kv:
+        print("[-] ERROR: Kernel version is not compatible: %s <-> %s" % \
+              (kflag_kv, kv))
+        exit(-1)
+    return kv
+
+def install_kflag():
+    try:
+        subprocess.check_call("sudo insmod %s" % KFLAG, shell=True)
+    except subprocess.CalledProcessError as e:
+        print(e.output)
+        print("[-] ERROR: Failed to insert module")
+        exit(-1)
+
+def download_kflag(bit):
+    if os.path.exists(KFLAG):
+        os.unlink(KFLAG)
+
+    fn = "kflag.ko"
+    url = "%s/%s" % (URL, fn)
+    print("> Downloading from %s" % url)
+    os.system("wget %s" % url)
+    if not os.path.exists(fn):
+        print("[-] ERROR: Failed to download kflag module")
+        exit(-1)
+
+    os.rename(fn, KFLAG)
+
+def test_kflag():
+    try:
+        print(subprocess.check_output("cat /proc/flag", shell=True))
+    except subprocess.CalledProcessError as e:
+        print(e.output)
+
+def uninstall_kflag():
+    try:
+        print(subprocess.check_output("sudo rmmod kflag", shell=True))
+        print("> kflag module uninstalled")
+    except subprocess.CalledProcessError as e:
+        print("(Can be ignored) - " + e.output)
+        return None
+
+def check_packages():
+    PKGS = []
+
+    for p in ["curl", "tee", "gdb", "gnuplot", "gcc-multilib"]:
+        try:
+            out = subprocess.check_output("which %s" % p, shell=True)
+            if len(out) > 0:
+                print("> %s available at %s" % (p, out.strip()))
+        except subprocess.CalledProcessError as e:
+            PKGS.append(p)
+
+    if len(PKGS) != 0:
+        os.system("sudo apt-get -y install %s" % " ".join(PKGS))
+
+if __name__ == "__main__":
+    check_rootpath()
+    check_packages()
+    bit = check_arch()
+    print("> architecture: %s bit" % bit)
+    assert(bit == "64")
+
+    download_kflag(bit)
+    print("> kflag module downloaded")
+
+    kernel=check_kernel()
+    print("> kernel: %s" % kernel)
+
+    uninstall_kflag()
+    install_kflag()
+    print("> kflag module installed")
+    test_kflag()
+
+    print("[*] GOOD! init was successful!")
