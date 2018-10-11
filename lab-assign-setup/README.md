@@ -1,7 +1,5 @@
 # Environment Setup Guide for Lab Assignment
 
-### <p style="text-align: center;"> [Software Security (CS52700) Fall-16](/), [Purdue University](https://www.cs.purdue.edu/) </p>
-
 - Advanced computer security theories and techniques
 - [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
 - [Instructor: Byoungyoung Lee](https://lifeasageek.github.io/)
