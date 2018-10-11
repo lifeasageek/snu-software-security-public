@@ -5,8 +5,11 @@
 - Instructor: [Byoungyoung Lee](https://lifeasageek.github.io/) (byoungyoung@snu.ac.kr)
 - TA: Hyunjun Kim (hjkim@sor.snu.ac.kr)
 
-Our lab assignments require you to have an access to Linux-based
-machine. Specifically, you need to install
+Our lab assignments require you to have an access to a machine running
+Ubuntu. This environment setup guides you to install the virtual
+machine running Ubuntu.
+
+First, you will need to install
 [vagrant](https://www.vagrantup.com/docs/installation/) on your own
 machine (check vagrant document to install it on your OS).
 
