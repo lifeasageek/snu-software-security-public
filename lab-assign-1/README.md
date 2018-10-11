@@ -2,11 +2,6 @@
 
 - **Due date: 11:59pm, Oct 23, 2018**
 
-
-Before starting this assignment, please follow
-[the environment setup guide](https://github.com/lifeasageek/class-syssec-public/blob/master/lab-assign-setup/README.md)
-first.
-
 In this assignment you will learn how to exploit a simple
 stack overflow in the `target` binary (i.e., `lab-assign-1/target` in our git
 repository `https://github.com/lifeasageek/class-syssec-public`).
@@ -18,9 +13,9 @@ reading the `flag`.
 ## Instruction
 
 Before getting started, follow the
-[setup instruction]({filename}/pages/setup.md) to setup the working
-environment. After setting up the environment, you can run the
-following commands to run the `target` binary.
+[setup instruction](https://github.com/lifeasageek/class-syssec-public/blob/master/lab-assign-setup/README.md)
+to setup the working environment. After setting up the environment,
+you can run the following commands to run the `target` binary.
 
 ```sh
 # ssh to VM
