@@ -6,9 +6,8 @@ import platform
 from utils import *
 
 ROOT = os.path.dirname(os.path.realpath(__file__))
-DESIRED_ROOT = "/vagrant/cs52700-public"
+DESIRED_ROOT = "/vagrant/class-syssec-public"
 KFLAG = os.path.join(ROOT, "kflag.ko")
-
 
 def check_rootpath():
     if not ROOT.startswith(DESIRED_ROOT):
