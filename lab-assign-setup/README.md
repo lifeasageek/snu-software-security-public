@@ -34,6 +34,7 @@ initialize environments.
 
 ```sh
 [vm]$ cd /vagrant
+[vm]:/vagrant$ sudo apt-get update
 [vm]:/vagrant$ sudo apt-get install git
 [vm]:/vagrant$ git clone https://github.com/lifeasageek/class-syssec-public
 [vm]:/vagrant$ cd class-syssec-public/lab-assign-setup
