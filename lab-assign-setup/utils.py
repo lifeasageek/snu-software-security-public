@@ -6,7 +6,7 @@ import socket
 import string
 import platform
 
-URL = "https://raw.githubusercontent.com/lifeasageek/class-syssec-public/master/lab-assign-setup"
+URL = "https://raw.githubusercontent.com/lifeasageek/snu-software-security-public/master/lab-assign-setup"
 
 # debugging
 if "URL" in os.environ:

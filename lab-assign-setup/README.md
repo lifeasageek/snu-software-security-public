@@ -3,7 +3,6 @@
 - Advanced computer security theories and techniques
 - [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
 - Instructor: [Byoungyoung Lee](https://lifeasageek.github.io/) (byoungyoung@snu.ac.kr)
-- TA: Hyunjun Kim (hjkim@sor.snu.ac.kr)
 
 Our lab assignments require you to have an access to a machine running
 Ubuntu. This environment setup guides you to install the virtual
@@ -36,9 +35,9 @@ initialize environments.
 [vm]$ cd /vagrant
 [vm]:/vagrant$ sudo apt-get update
 [vm]:/vagrant$ sudo apt-get install git
-[vm]:/vagrant$ git clone https://github.com/lifeasageek/class-syssec-public
-[vm]:/vagrant$ cd class-syssec-public/lab-assign-setup
-[vm]:/vagrant/class-syssec-public/lab-assign-setup$ ./init
+[vm]:/vagrant$ git clone -b fall-19 https://github.com/lifeasageek/snu-software-security-public
+[vm]:/vagrant$ cd snu-software-security-public/lab-assign-setup
+[vm]:/vagrant/snu-software-security-public/lab-assign-setup$ ./init
 ```
 
 After running the commands above, if your outputs include the
@@ -53,8 +52,8 @@ F38FE749E36CD0437AD0062D6836C393618FCC4A412FDE666C89EB41AC0814D5
 [*] GOOD! init was successful!
 ```
 
-Note that `class-syssec-public` folder should be located as
-`/vagrant/class-syssec-public` inside vm. This is required as the kflag
+Note that `snu-software-security-public` folder should be located as
+`/vagrant/snu-software-security-public` inside vm. This is required as the kflag
 kernel module, which is installed by `init` script and generates
 `flag`, assumes the `target` binary (that you will attack in the
-assignment) is placed in the directory `/vagrant/class-syssec-public`.
+assignment) is placed in the directory `/vagrant/snu-software-security-public`.

@@ -1,10 +1,10 @@
 # Lab Assignment #1: Exploiting Simple Stack overflow
 
-- **Due date: 11:59pm, Oct 23, 2018**
+- **Due date: 11:59pm, Sep 28, 2019**
 
 In this assignment you will learn how to exploit a simple
 stack overflow in the `target` binary (i.e., `lab-assign-1/target` in our git
-repository `https://github.com/lifeasageek/class-syssec-public`).
+repository `https://github.com/lifeasageek/snu-software-security-public`).
 Specifically, you will need to reverse-engineer `target` in order to
 (1) understand how the stack overflow happens, (2) manipulate a return
 address value, and (3) achieve the final exploitation goal,
@@ -13,7 +13,7 @@ reading the `flag`.
 ## Instruction
 
 Before getting started, follow the
-[setup instruction](https://github.com/lifeasageek/class-syssec-public/blob/master/lab-assign-setup/README.md)
+[setup instruction](https://github.com/lifeasageek/snu-software-security-public/blob/fall-19/lab-assign-setup/README.md)
 to setup the working environment. After setting up the environment,
 you can run the following commands to run the `target` binary.
 
@@ -21,10 +21,10 @@ you can run the following commands to run the `target` binary.
 # ssh to VM
 $ vagrant ssh
 
-[vm]:~$ cd /vagrant/class-syssec-public/lab-assign-1
+[vm]:~$ cd /vagrant/snu-software-security-public/lab-assign-1
 
 # Run the target binary will ask you to enter stdin inputs.
-[vm]:/vagrant/class-syssec-public/lab-assign-1$ ./target
+[vm]:/vagrant/snu-software-security-public/lab-assign-1$ ./target
 Please input something...
 ```
 
@@ -61,7 +61,7 @@ the string
 ```sh
 # Running the target binary with a reference exploit (i.e.,
 # exploit.py), a flag is dumped.
-[vm]:/vagrant/class-syssec-public/lab-assign-1$ ./exploit.py|./target
+[vm]:/vagrant/snu-software-security-public/lab-assign-1$ ./exploit.py|./target
 Please input something...
 This is your flag:
 
