@@ -1,6 +1,7 @@
 # Lab Assignment #1: Exploiting Simple Stack overflow
 
 - **Due date: 11:59pm, Sep 28, 2019**
+- TA: Jinhan Kwak (rhkrwlsgks1@snu.ac.kr)
 
 In this assignment you will learn how to exploit a simple
 stack overflow in the `target` binary (i.e., `lab-assign-1/target` in our git
