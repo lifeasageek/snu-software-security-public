@@ -75,8 +75,7 @@ Make your own tarball, named `lab1.tar.gz`, and submit it through
 eTL. Your tarball must include following files.
 
 - `flag`: a flag that you obtained from exploitation
-- `README`: shorly describes (less than 5 sentences) how to run the
-  exploit (less than five sentences!)
+- `README`: shortly describes how to run the exploit (less than 5 sentences!)
 - `exploit.*`: your own exploit source code
 
 
