@@ -1,11 +1,11 @@
 # Programming Assignment #1: Simple Integer Overflow Checker using LLVM
 
-- **Due date: 11:59pm, Oct 4, 2018**
+- **Due date: 11:59pm, Oct 18, 2019**
 
 - Advanced computer security theories and techniques
 - [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
 - [Instructor: Byoungyoung Lee](https://lifeasageek.github.io/)
-- TA: Hyunjun Kim (hjkim@sor.snu.ac.kr)
+- TA: Jinhan Kwak (rhkrwlsgks1@snu.ac.kr)
 
 ## NOTES
 
@@ -45,7 +45,7 @@ better understand LLVM.
 ## Base code repository
 
 Clone our git repository,
-`https://github.com/lifeasageek/class-syssec-public`, and all base code is
+`https://github.com/lifeasageek/snu-software-security-public`, and all base code is
 located in the `prog-assign-1` directory.
 
 - `setup.sh`: Initial environment setup script.
@@ -198,5 +198,5 @@ Testing Time: 0.20s
 
 - edit the files in the "pass" folder
 - run the script "prepare-submit.sh"
-- rename the file "assign1.tar.gz" to "[Student-number]_assign1.tar.gz" (e.g., 2018-12345_assign1.tar.gz)
+- rename the file "assign1.tar.gz" to "[Student-number]_assign1.tar.gz" (e.g., 2019-12345_assign1.tar.gz)
 - upload to eTL
