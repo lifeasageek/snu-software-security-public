@@ -100,11 +100,9 @@ understand LLVM.
 ## How to setup, build and test
 
 Descriptions below assume that you have an access to the Linux-based
-machine with root privilege. You may try, but we do not recommend you
-use
+machine with root privilege. For this assignment, you must use
 [vagrant](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-setup)
-to do this, as it may face out-of-memory issues while building llvm.
-
+.
 
 We provide a setup script for this assignment. Clone the github repository
 and then execute `setup.sh`.
