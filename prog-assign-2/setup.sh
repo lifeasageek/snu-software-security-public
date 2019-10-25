@@ -16,7 +16,7 @@ if [ ! -e "${AFL}" ]; then
 fi
 
 # Download requirements
-sudo apt install libtool automake bison libglib2.0-dev
+sudo apt install build-essential libtool automake bison libglib2.0-dev
 
 # Build AFL
 pushd ./afl-2.33b

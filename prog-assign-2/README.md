@@ -101,8 +101,7 @@ understand LLVM.
 
 Descriptions below assume that you have an access to the Linux-based
 machine with root privilege. For this assignment, you must use
-[vagrant](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-setup)
-.
+[vagrant](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-setup).
 
 We provide a setup script for this assignment. Clone the github repository
 and then execute `setup.sh`.
