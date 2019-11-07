@@ -217,8 +217,8 @@ crashing inputs in a reasonable time (**less than 1 minute**).
 ## Submission
 
 - Run the `prepare-submit.sh` script
-- Rename the file `assign2.tar.gz` to `[your student number]\_assign2.tar.gz`
-(e.g., `2019-12345\_assign2.tar.gz`)
+- Rename the file `assign2.tar.gz` to `[your student number]_assign2.tar.gz`
+(e.g., `2019-12345_assign2.tar.gz`)
 - Upload to eTL
 
 ## Notice
