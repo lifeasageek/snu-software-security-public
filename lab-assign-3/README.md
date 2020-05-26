@@ -10,7 +10,7 @@ Before you get started, you may search the how heap allocation in linux works an
 
 ## Instruction & Exploitation Goal
 
-The same as the [first lab assignment](https://github.com/lifeasageek/snu-software-security-public/lab-assign-1).
+The same as the [first lab assignment](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-1).
 
 ## Submission
 
