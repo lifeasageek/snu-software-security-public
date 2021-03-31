@@ -101,13 +101,13 @@ understand LLVM.
 
 Descriptions below assume that you have an access to the Linux-based
 machine with root privilege. For this assignment, you must use
-[vagrant](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-setup).
+[vagrant](https://github.com/lifeasageek/snu-software-security-public/tree/spring-21/lab-assign-setup).
 
 We provide a setup script for this assignment. Clone the github repository
 and then execute `setup.sh`.
 
 ```
-$ git clone -b fall-19 https://github.com/lifeasageek/snu-software-security-public
+$ git clone -b spring-21 https://github.com/lifeasageek/snu-software-security-public
 $ cd snu-software-security-public/prog-assign-2
 $ ./setup.sh
 ```

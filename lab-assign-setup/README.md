@@ -35,7 +35,7 @@ initialize environments.
 [vm]$ cd /vagrant
 [vm]:/vagrant$ sudo apt-get update
 [vm]:/vagrant$ sudo apt-get install git
-[vm]:/vagrant$ git clone -b fall-19 https://github.com/lifeasageek/snu-software-security-public
+[vm]:/vagrant$ git clone -b spring-21 https://github.com/lifeasageek/snu-software-security-public
 [vm]:/vagrant$ cd snu-software-security-public/lab-assign-setup
 [vm]:/vagrant/snu-software-security-public/lab-assign-setup$ ./init
 ```

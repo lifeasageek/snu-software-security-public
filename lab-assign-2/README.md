@@ -16,7 +16,7 @@ first.
 
 ## Instruction & Exploitation Goal
 
-The same as the [first lab assignment](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-1).
+The same as the [first lab assignment](https://github.com/lifeasageek/snu-software-security-public/tree/spring-21/lab-assign-1).
 
 ## Submission
 

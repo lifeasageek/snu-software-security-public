@@ -140,13 +140,13 @@ some other approaches if you think it is more general and efficient.
 
 Descriptions below assume that you have an access to the Linux-based
 machine with root privilege. If you do not have one, please read
-[this](https://github.com/lifeasageek/snu-software-security-public/tree/fall-19/lab-assign-setup).
+[this](https://github.com/lifeasageek/snu-software-security-public/tree/spring-21/lab-assign-setup).
 
 We provide a basic setup script for this assignment. You can follow the steps
 described below to setup the `AFL` with `qemu_mode`.
 
 ```
-$ git clone -b fall-19 https://github.com/lifeasageek/snu-software-security-public
+$ git clone -b spring-21 https://github.com/lifeasageek/snu-software-security-public
 $ cd snu-software-security-public/prog-assign-3
 $ ./setup.sh
 ```

@@ -1,6 +1,6 @@
 # Lab Assignment #1: Exploiting Simple Stack overflow
 
-- **Due date: 11:59pm, Sep 28, 2019**
+- **Due date: 11:59pm, Apr 9, 2021**
 - TA: Jinhan Kwak (rhkrwlsgks1@snu.ac.kr)
 
 In this assignment you will learn how to exploit a simple
@@ -14,7 +14,7 @@ reading the `flag`.
 ## Instruction
 
 Before getting started, follow the
-[setup instruction](https://github.com/lifeasageek/snu-software-security-public/blob/fall-19/lab-assign-setup/README.md)
+[setup instruction](https://github.com/lifeasageek/snu-software-security-public/blob/spring-21/lab-assign-setup/README.md)
 to setup the working environment. After setting up the environment,
 you can run the following commands to run the `target` binary.
 
