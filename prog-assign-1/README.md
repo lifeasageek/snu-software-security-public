@@ -1,6 +1,6 @@
 # Programming Assignment #1: Simple Integer Overflow Checker using LLVM
 
-- **Due date: 11:59pm, Oct 18, 2019**
+- **Due date: 11:59pm, Apr 25, 2021**
 
 - Advanced computer security theories and techniques
 - [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
@@ -10,8 +10,7 @@
 ## NOTES
 
 - To complete this assignment, we strongly encourage you to prepare
-your own machine running Ubuntu 16.04 with a root access. Ubuntu 18.04
-is not tested, but it should be working without a major issue.
+your own machine running Ubuntu 18.04 with a root access.
 
 ## Introduction
 
@@ -39,14 +38,18 @@ allocation function, `malloc()`.
 Before you get started, following articles would be helpful for you to
 better understand LLVM.
 
-- [LLVM Architecture](http://www.aosabook.org/en/llvm.html)
-- [Writing an LLVM Pass](http://llvm.org/docs/WritingAnLLVMPass.html)
+- [LLVM Architecture](https://www.aosabook.org/en/llvm.html)
+- [Writing an LLVM Pass](https://llvm.org/docs/WritingAnLLVMPass.html)
 
 ## Base code repository
 
-Clone our git repository,
-`https://github.com/lifeasageek/snu-software-security-public`, and all base code is
-located in the `prog-assign-1` directory.
+Clone our git repository.
+
+```
+$ git clone -b spring-21 https://github.com/lifeasageek/snu-software-security-public
+```
+
+All base code is located in the `prog-assign-1` directory.
 
 - `setup.sh`: Initial environment setup script.
 - `Makefile`: makefile for LLVM pass skeleton
@@ -55,14 +58,14 @@ located in the `prog-assign-1` directory.
 
 ## How to setup and build
 
-First, install required packages, `clang-3.8` and `cmake` (tested on Ubuntu 16.04).
+First, install required packages, `clang-9` and `cmake` (tested on Ubuntu 18.04).
 
 ```
-$ sudo apt install clang-3.8 cmake
+$ sudo apt install clang-9 cmake
 ```
 
-Then run `setup.sh` to download and build `llvm-3.8`. LLVM source code
-will be place in `llvm/llvm-3.8.1.src` and it will be built in the
+Then run `setup.sh` to download and build `llvm-9.0.0`. LLVM source code
+will be place in `llvm/llvm-project/llvm` and it will be built in the
 `llvm/build` directory.
 
 ```
@@ -117,7 +120,7 @@ int main(int argc, const char** argv) {
 This can be built and run as follows.
 
 ```
-$ clang-3.8 -g -Xclang -load -Xclang ./build/intcheck/libIntcheckPass.so ./pass/runtime/rtlib.c ./test/malloc-overflow/malloc-overflow.c
+$ clang-9 -g -Xclang -load -Xclang ./build/intcheck/libIntcheckPass.so ./pass/runtime/rtlib.c ./test/malloc-overflow/malloc-overflow.c
 Instrument:   %15 = mul i32 %13, %14, !dbg !36
 
 $ ./a.out 10 10
@@ -198,5 +201,5 @@ Testing Time: 0.20s
 
 - edit the files in the "pass" folder
 - run the script "prepare-submit.sh"
-- rename the file "assign1.tar.gz" to "[Student-number]_assign1.tar.gz" (e.g., 2019-12345_assign1.tar.gz)
+- rename the file "assign1.tar.gz" to "[Student-number]_assign1.tar.gz" (e.g., 2021-12345_assign1.tar.gz)
 - upload to eTL

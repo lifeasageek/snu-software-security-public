@@ -1,19 +1,21 @@
 #include "llvm/Pass.h"
+#include "llvm/IR/DerivedTypes.h"
 #include "llvm/IR/Function.h"
-#include "llvm/Support/raw_ostream.h"
-#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/IR/InstrTypes.h"
-#include "llvm/Transforms/IPO/PassManagerBuilder.h"
 #include "llvm/IR/IRBuilder.h"
-#include "llvm/Transforms/Utils/BasicBlockUtils.h"
+#include "llvm/IR/LegacyPassManager.h"
 #include "llvm/IR/Module.h"
+#include "llvm/Transforms/IPO/PassManagerBuilder.h"
+#include "llvm/Transforms/Utils/BasicBlockUtils.h"
+#include "llvm/Support/raw_ostream.h"
+
 using namespace llvm;
 
 namespace {
   struct IntcheckPass : public FunctionPass {
     static char ID;
     LLVMContext *C;
-    Constant *logFunc;
+    FunctionCallee logFunc;
     Type *VoidTy;
     Type *Int32Ty;
 
@@ -23,7 +25,7 @@ namespace {
       C = &(M.getContext());
       VoidTy = Type::getVoidTy(*C);
       Int32Ty = Type::getInt32Ty(*C);
-      logFunc = M.getOrInsertFunction("logop", VoidTy, Int32Ty, NULL);
+      logFunc = M.getOrInsertFunction("logop", VoidTy, Int32Ty, Int32Ty);
       return true;
     }
 

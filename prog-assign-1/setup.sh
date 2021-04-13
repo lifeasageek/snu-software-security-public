@@ -3,12 +3,17 @@
 # Download llvm
 mkdir llvm
 pushd llvm
-wget http://llvm.org/releases/3.8.1/llvm-3.8.1.src.tar.xz
-tar xf llvm-3.8.1.src.tar.xz
+git clone -b llvmorg-9.0.0 https://github.com/llvm/llvm-project.git
 
 # Build llvm
 mkdir build
 pushd build
-cmake ../llvm-3.8.1.src
+cmake -DLLVM_TARGETS_TO_BUILD=X86 \
+      -DLLVM_ENABLE_PROJECTS="clang;compiler-rt" \
+      -DCMAKE_BUILD_TYPE=Release \
+      -G "Unix Makefiles" \
+      ../llvm-project/llvm
 make -j`nproc`
+
+popd
 popd
