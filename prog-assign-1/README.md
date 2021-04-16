@@ -120,15 +120,15 @@ int main(int argc, const char** argv) {
 This can be built and run as follows.
 
 ```
-$ clang-9 -g -Xclang -load -Xclang ./build/intcheck/libIntcheckPass.so ./pass/runtime/rtlib.c ./test/malloc-overflow/malloc-overflow.c
+$ make build
 Instrument:   %15 = mul i32 %13, %14, !dbg !36
 
-$ ./a.out 10 10
+$ make run
+./a.out 10 10
 begin main()
 [LOG] Computed 64 at line 20
 end main()
-
-$ ./a.out 1000 10000000
+./a.out 1000 10000000
 begin main()
 [LOG] Computed 540be400 at line 20
 end main()
