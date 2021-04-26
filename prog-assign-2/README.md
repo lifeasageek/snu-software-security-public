@@ -1,6 +1,6 @@
 # Programming Assignment #2: Weakening Strong Constraints using LLVM
 
-- **Due Date: 11:59pm, Nov 15, 2019**
+- **Due Date: 11:59pm, May 10, 2021**
 
 - Software Security
 - [Dept. of Electrical and Computer Engineering](https://ee.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
@@ -218,7 +218,7 @@ crashing inputs in a reasonable time (**less than 1 minute**).
 
 - Run the `prepare-submit.sh` script
 - Rename the file `assign2.tar.gz` to `[your student number]_assign2.tar.gz`
-(e.g., `2019-12345_assign2.tar.gz`)
+(e.g., `2021-12345_assign2.tar.gz`)
 - Upload to eTL
 
 ## Notice
