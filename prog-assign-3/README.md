@@ -1,6 +1,6 @@
 # Programming Assignment #3: Weakening Strong Constraints for AFL using QEMU
 
-- **Due Date: 11:59pm, Dec 13, 2019**
+- **Due Date: 11:59pm, May 28, 2021**
 
 - Software Security
 - [Dept. of Electrical and Computer Engineering](http://ece.snu.ac.kr/en), [Seoul National University](http://snu.ac.kr/index.html)
